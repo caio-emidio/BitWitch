@@ -5,7 +5,11 @@ function bitcoinSet(currency, country) {
         })
         .then(response => response.json())
         .then((result) => {
-            const info = parseFloat(result.data.amount).toLocaleString(country, { style: 'currency', currency });
+            const params = Object.fromEntries(new URLSearchParams(location.search));
+            const quantity = params.quantity || 1
+            const parseValue = parseFloat(result.data.amount);
+            const total = parseValue * quantity;
+            const info = total.toLocaleString(country, { style: 'currency', currency });
             value.innerHTML = info
         })
         .catch(error => console.log('error', error));
