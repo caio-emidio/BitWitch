@@ -27,21 +27,19 @@ body {
 
 .text {
     margin-right: 10px;
-    color: #F7931A;
 }
 
 .value {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #F7931A;
 }
 
 #value {
     padding-right: 5%;
 }
 
-.bitcoin {
+#bitcoin {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,4 +49,5 @@ body {
     max-width: 100%;
     padding-right: 5%;
     padding-left: 5%;
+    color: #F7931A;
 }
