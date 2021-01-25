@@ -6,7 +6,6 @@ function bitcoinSet(currency, country) {
         .then(response => response.json())
         .then((result) => {
             const params = Object.fromEntries(new URLSearchParams(location.search));
-            console.log(params)
             if (params.bgcolor) {
                 const test = document.getElementById("bitcoin");
                 test.style.backgroundColor = `#${params.bgcolor}`
