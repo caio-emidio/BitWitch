@@ -1,0 +1,2 @@
+# BitWitch
+Bitcoin Checker
