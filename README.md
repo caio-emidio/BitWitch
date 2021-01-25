@@ -2,5 +2,5 @@
 Bitcoin Checker
 
 
-Checkit on:
+Check it on:
 https://caio-emidio.github.io/BitWitch/
