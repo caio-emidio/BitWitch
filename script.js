@@ -6,6 +6,15 @@ function bitcoinSet(currency, country) {
         .then(response => response.json())
         .then((result) => {
             const params = Object.fromEntries(new URLSearchParams(location.search));
+            console.log(params)
+            if (params.bgcolor) {
+                const test = document.getElementById("bitcoin");
+                test.style.backgroundColor = `#${params.bgcolor}`
+            }
+            if (params.color) {
+                const test = document.getElementById("bitcoin");
+                test.style.color = `#${params.color}`
+            }
             const quantity = params.quantity || 1
             const parseValue = parseFloat(result.data.amount);
             const total = parseValue * quantity;
