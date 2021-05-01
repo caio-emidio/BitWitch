@@ -26,7 +26,9 @@ body {
 }
 
 .text {
-    margin-right: 10px;
+    font-size: 16pt;
+    color: #365c7c;
+    margin-right: 10px
 }
 
 .value {
@@ -35,19 +37,174 @@ body {
     justify-content: space-between;
 }
 
+.values {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #value {
     padding-right: 5%;
 }
 
 #bitcoin {
-    display: flex;
-    flex-direction: row;
+    display: none;
     justify-content: space-between;
-    background-color: #0D579B;
+    align-items: center;
+    background-color: #9ED3FF;
     color: #F7931A;
     box-shadow: 0 0 10px 5px rgba(100, 100, 100, 0.1);
     overflow: hidden;
     max-width: 100%;
     padding-right: 5%;
     padding-left: 5%;
+    width: 100%;
+    animation: .5s from-bottom;
+}
+
+
+/* novas moedas */
+
+/* bitcoins */
+
+.bitcoin_infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bitcoin_infos p {
+    margin-right: 20px;
+    font-size: 16pt;
+    padding: 8px 18px;
+    font-weight: bold;
+    color: #365c7c;
+    background: #88c8fc;
+    border-radius: 20px;
+}
+
+/* litecoin */
+
+#litecoin {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #325A98;
+    color: #F7931A;
+    box-shadow: 0 0 10px 5px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    max-width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+    animation: .5s from-bottom;
+}
+
+.litecoin_text {
+    margin-right: 10px;
+    color: white;
+}
+
+.litecoin_infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.litecoin_infos p {
+    margin-right: 20px;
+    font-size: 14pt;
+    padding: 8px 18px;
+    font-weight: bold;
+    color: white;
+    background: #4a6a99;
+    border-radius: 20px;
+}
+
+/* ethereum */
+
+#ethereum {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5D85AD;
+    color: #F7931A;
+    box-shadow: 0 0 10px 5px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    max-width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+    animation: .5s from-bottom;
+}
+
+.ethereum_text {
+    margin-right: 10px;
+    color: white;
+}
+
+.ethereum_infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ethereum_infos p {
+    margin-right: 20px;
+    font-size: 16pt;
+    padding: 8px 18px;
+    font-weight: bold;
+    color: white;
+    background: #7095b9;
+    border-radius: 20px;
+}
+
+/* xrp */
+
+#xrp {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #313131;
+    color: #F7931A;
+    box-shadow: 0 0 10px 5px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    max-width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+    animation: .5s from-bottom;
+}
+
+.xrp_text {
+    margin-right: 10px;
+    color: white;
+}
+
+.xrp_infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xrp_infos p {
+    margin-right: 20px;
+    font-size: 16pt;
+    padding: 8px 18px;
+    font-weight: bold;
+    color: white;
+    background: #434343;
+    border-radius: 20px;
+}
+
+@keyframes from-bottom {
+    0%{
+        margin-top: 500px;
+    }
+    100%{
+        margin-top: 0px;
+    }
 }
